@@ -1,0 +1,31 @@
+.auth-container{
+    margin-top: 110px;
+    background-color: rgb(237, 237, 210);
+    border: 5px ridge black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.h2{
+    font-size: large;
+}
+.update-btn{
+    margin-left: 50px;
+}
+/* Tab View */
+@media(max-width:770px){
+    .auth-container{
+        margin-left: 20%;
+    }
+    .h2{
+        font-size: medium;
+    }
+}
+/* Mobile view */
+@media(max-width:550px){
+    .auth-container{
+        margin-left: 10%;
+    }
+}

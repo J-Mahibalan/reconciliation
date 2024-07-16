@@ -1,0 +1,122 @@
+.create{
+    background-color: #0ca7a7e0;
+    border: 5px ridge black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-1{
+    margin-left: 70px;
+}
+.h-1{
+    margin-left: -25px;
+}
+.get{
+    background-color: #0ca7a7e0;
+    border: 5px ridge black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.update{
+    background-color:#0ca7a7e0;
+    border: 5px ridge black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-2{
+    margin-left: 70px;
+}
+
+/* Tab View */
+@media(max-width:770px){
+    .create{
+        background-color: #0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 20%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn-1{
+        margin-left: 50px;
+    }
+    .h-1{
+        margin-left: -15px;
+    }
+    .get{
+        background-color: #0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 20%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .update{
+        background-color:#0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 20%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn-2{
+        margin-left: 50px;
+    }
+}
+
+/* Mobile view */
+@media(max-width:550px){
+    .create{
+        width: 85%;
+        background-color: #0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 10%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn-1{
+        margin-left: 30px;
+    }
+    .h-1{
+        margin-left: -5px;
+    }
+    .get{
+        width: 85%;
+        background-color: #0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 10%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .update{
+        width: 85%;
+        background-color:#0ca7a7e0;
+        border: 5px ridge black;
+        margin-left: 10%;
+        margin-right: 30%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .btn-2{
+        margin-left: 30px;
+    }
+    .input{
+        width: 80%;
+    }
+}

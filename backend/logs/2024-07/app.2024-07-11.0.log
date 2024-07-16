@@ -1,0 +1,70 @@
+2024-07-11T16:12:05.422+05:30  INFO 64976 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 64976 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-11T16:12:05.427+05:30  INFO 64976 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-11T16:12:08.987+05:30  INFO 64976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-11T16:12:09.366+05:30  INFO 64976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 330 ms. Found 7 JPA repository interfaces.
+2024-07-11T16:12:10.972+05:30  INFO 64976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-11T16:12:11.137+05:30  INFO 64976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-11T16:12:11.229+05:30  INFO 64976 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-11T16:12:11.773+05:30  INFO 64976 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-11T16:12:11.861+05:30  INFO 64976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-11T16:12:12.615+05:30  INFO 64976 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1230a38d
+2024-07-11T16:12:12.620+05:30  INFO 64976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-11T16:12:12.752+05:30  WARN 64976 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-11T16:12:14.645+05:30  INFO 64976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-11T16:12:14.919+05:30  INFO 64976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-11T16:12:15.857+05:30  INFO 64976 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-11T16:12:15.859+05:30  WARN 64976 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-11T16:12:16.142+05:30  WARN 64976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-11T16:12:16.844+05:30  INFO 64976 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61c9afcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33536319, org.springframework.security.web.context.SecurityContextHolderFilter@73a525c6, org.springframework.security.web.header.HeaderWriterFilter@688cb7be, org.springframework.web.filter.CorsFilter@62afd3ab, org.springframework.security.web.authentication.logout.LogoutFilter@eff792b, com.project.reconciliation.security.jwt.AuthTokenFilter@59b34e8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1479279c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ae93fd4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5649af04, org.springframework.security.web.session.SessionManagementFilter@58a0dd52, org.springframework.security.web.access.ExceptionTranslationFilter@66a62319, org.springframework.security.web.access.intercept.AuthorizationFilter@b8b3874]
+2024-07-11T16:12:17.645+05:30  INFO 64976 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 13.834 seconds (process running for 22.803)
+2024-07-11T16:12:17.829+05:30  INFO 64976 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-11T16:12:17.833+05:30  INFO 64976 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-11T16:12:17.837+05:30  INFO 64976 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-11T16:12:17.843+05:30  INFO 64976 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-11T16:12:17.909+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-11T16:12:17.914+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-11T16:12:17.915+05:30  WARN 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-11T16:12:17.922+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-11T16:12:17.930+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-11T16:12:17.938+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-11T16:12:17.950+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-11T16:12:17.955+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-11T16:12:17.956+05:30  INFO 64976 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-11T16:12:18.008+05:30  INFO 64976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-11T16:12:18.015+05:30  INFO 64976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-11T16:12:18.035+05:30  INFO 64976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-11T16:21:15.136+05:30  INFO 60748 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 60748 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-11T16:21:15.143+05:30  INFO 60748 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-11T16:21:17.872+05:30  INFO 60748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-11T16:21:18.109+05:30  INFO 60748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 210 ms. Found 7 JPA repository interfaces.
+2024-07-11T16:21:19.444+05:30  INFO 60748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-11T16:21:19.685+05:30  INFO 60748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-11T16:21:19.821+05:30  INFO 60748 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-11T16:21:20.318+05:30  INFO 60748 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-11T16:21:20.407+05:30  INFO 60748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-11T16:21:21.213+05:30  INFO 60748 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342b545a
+2024-07-11T16:21:21.218+05:30  INFO 60748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-11T16:21:21.384+05:30  WARN 60748 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-11T16:21:23.544+05:30  INFO 60748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-11T16:21:23.806+05:30  INFO 60748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-11T16:21:24.788+05:30  INFO 60748 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-11T16:21:24.789+05:30  WARN 60748 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-11T16:21:25.070+05:30  WARN 60748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-11T16:21:25.829+05:30  INFO 60748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c5f40b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a8695f8, org.springframework.security.web.context.SecurityContextHolderFilter@14c49bcd, org.springframework.security.web.header.HeaderWriterFilter@2c831c44, org.springframework.web.filter.CorsFilter@315c60ec, org.springframework.security.web.authentication.logout.LogoutFilter@1bfa3cfc, com.project.reconciliation.security.jwt.AuthTokenFilter@1a3e48ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@566a9af7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e472f67, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b8b3874, org.springframework.security.web.session.SessionManagementFilter@4d8b2506, org.springframework.security.web.access.ExceptionTranslationFilter@598f99f4, org.springframework.security.web.access.intercept.AuthorizationFilter@626299bc]
+2024-07-11T16:21:26.601+05:30  INFO 60748 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 12.889 seconds (process running for 21.625)
+2024-07-11T16:21:26.752+05:30  INFO 60748 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-11T16:21:26.757+05:30  INFO 60748 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-11T16:21:26.762+05:30  INFO 60748 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-11T16:21:26.770+05:30  INFO 60748 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-11T16:21:26.845+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-11T16:21:26.848+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-11T16:21:26.849+05:30  WARN 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-11T16:21:26.855+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-11T16:21:26.862+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-11T16:21:26.869+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-11T16:21:26.874+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-11T16:21:26.879+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-11T16:21:26.880+05:30  INFO 60748 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-11T16:21:26.934+05:30  INFO 60748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-11T16:21:26.938+05:30  INFO 60748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-11T16:21:26.957+05:30  INFO 60748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,397 @@
+2024-07-12T09:26:53.310+05:30  INFO 79448 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 79448 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T09:26:53.327+05:30  INFO 79448 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T09:26:56.578+05:30  INFO 79448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T09:26:56.941+05:30  INFO 79448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 318 ms. Found 7 JPA repository interfaces.
+2024-07-12T09:26:58.857+05:30  INFO 79448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T09:26:59.119+05:30  INFO 79448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T09:26:59.284+05:30  INFO 79448 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T09:26:59.975+05:30  INFO 79448 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T09:27:00.107+05:30  INFO 79448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T09:27:00.801+05:30  INFO 79448 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20ba2011
+2024-07-12T09:27:00.806+05:30  INFO 79448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T09:27:00.993+05:30  WARN 79448 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T09:27:03.135+05:30  INFO 79448 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T09:27:03.395+05:30  INFO 79448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T09:27:04.343+05:30  INFO 79448 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T09:27:04.346+05:30  WARN 79448 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T09:27:04.674+05:30  WARN 79448 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T09:27:05.437+05:30  INFO 79448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d90d1e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ae931b6, org.springframework.security.web.context.SecurityContextHolderFilter@787a0dcf, org.springframework.security.web.header.HeaderWriterFilter@5417f86c, org.springframework.web.filter.CorsFilter@1b6ebd7b, org.springframework.security.web.authentication.logout.LogoutFilter@1910d90c, com.project.reconciliation.security.jwt.AuthTokenFilter@7a8d5549, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35a9e1b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@306d0b5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6612dbf4, org.springframework.security.web.session.SessionManagementFilter@19263e99, org.springframework.security.web.access.ExceptionTranslationFilter@2391ee25, org.springframework.security.web.access.intercept.AuthorizationFilter@2935c968]
+2024-07-12T09:27:06.256+05:30  INFO 79448 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 14.421 seconds (process running for 24.024)
+2024-07-12T09:27:06.593+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:27:06.594+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T09:27:06.601+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:27:06.609+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T09:27:06.618+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:27:06.620+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T09:27:06.620+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T09:27:06.629+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:27:06.630+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T09:27:06.636+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:27:06.638+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T09:27:06.642+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:27:06.643+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T09:27:06.645+05:30  INFO 79448 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T09:27:06.758+05:30  INFO 79448 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T09:27:06.766+05:30  INFO 79448 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T09:27:06.771+05:30  INFO 79448 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T09:27:06.777+05:30  INFO 79448 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T09:27:06.857+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T09:27:06.862+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T09:27:06.863+05:30  WARN 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T09:27:06.871+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T09:27:06.878+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T09:27:06.884+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T09:27:06.891+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T09:27:06.896+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T09:27:06.897+05:30  INFO 79448 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T09:27:06.973+05:30  INFO 79448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T09:27:06.977+05:30  INFO 79448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T09:27:07.001+05:30  INFO 79448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T09:58:34.992+05:30  INFO 57116 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 57116 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T09:58:34.997+05:30  INFO 57116 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T09:58:37.213+05:30  INFO 57116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T09:58:37.428+05:30  INFO 57116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 7 JPA repository interfaces.
+2024-07-12T09:58:38.677+05:30  INFO 57116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T09:58:38.863+05:30  INFO 57116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T09:58:38.984+05:30  INFO 57116 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T09:58:39.403+05:30  INFO 57116 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T09:58:39.472+05:30  INFO 57116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T09:58:40.193+05:30  INFO 57116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39314e02
+2024-07-12T09:58:40.200+05:30  INFO 57116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T09:58:40.416+05:30  WARN 57116 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T09:58:42.361+05:30  INFO 57116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T09:58:42.603+05:30  INFO 57116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T09:58:43.337+05:30  INFO 57116 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T09:58:43.339+05:30  WARN 57116 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T09:58:43.558+05:30  WARN 57116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T09:58:44.188+05:30  INFO 57116 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50405586, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c4088c2, org.springframework.security.web.context.SecurityContextHolderFilter@70f5e10b, org.springframework.security.web.header.HeaderWriterFilter@ae93fd4, org.springframework.web.filter.CorsFilter@20b9dc53, org.springframework.security.web.authentication.logout.LogoutFilter@629e9845, com.project.reconciliation.security.jwt.AuthTokenFilter@5dc5c213, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3860cdad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47db041b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2935c968, org.springframework.security.web.session.SessionManagementFilter@289c1cd1, org.springframework.security.web.access.ExceptionTranslationFilter@32d5f0be, org.springframework.security.web.access.intercept.AuthorizationFilter@40e78377]
+2024-07-12T09:58:45.026+05:30  INFO 57116 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 11.198 seconds (process running for 19.533)
+2024-07-12T09:58:45.297+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:58:45.298+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T09:58:45.308+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:58:45.317+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T09:58:45.343+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:58:45.344+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T09:58:45.344+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T09:58:45.357+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:58:45.357+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T09:58:45.368+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T09:58:45.369+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T09:58:45.374+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T09:58:45.375+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T09:58:45.375+05:30  INFO 57116 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T09:58:45.466+05:30  INFO 57116 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T09:58:45.469+05:30  INFO 57116 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T09:58:45.473+05:30  INFO 57116 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T09:58:45.477+05:30  INFO 57116 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T09:58:45.557+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T09:58:45.560+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T09:58:45.560+05:30  WARN 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T09:58:45.566+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T09:58:45.573+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T09:58:45.578+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T09:58:45.583+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T09:58:45.588+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T09:58:45.588+05:30  INFO 57116 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T09:58:45.646+05:30  INFO 57116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T09:58:45.652+05:30  INFO 57116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T09:58:45.678+05:30  INFO 57116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T10:03:01.697+05:30  INFO 75784 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 75784 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T10:03:01.702+05:30  INFO 75784 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T10:03:04.068+05:30  INFO 75784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T10:03:04.299+05:30  INFO 75784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 7 JPA repository interfaces.
+2024-07-12T10:03:05.332+05:30  INFO 75784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T10:03:05.485+05:30  INFO 75784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T10:03:05.585+05:30  INFO 75784 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T10:03:06.032+05:30  INFO 75784 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T10:03:06.123+05:30  INFO 75784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T10:03:06.727+05:30  INFO 75784 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2724ae48
+2024-07-12T10:03:06.732+05:30  INFO 75784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T10:03:06.891+05:30  WARN 75784 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T10:03:08.944+05:30  INFO 75784 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T10:03:09.209+05:30  INFO 75784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:03:10.104+05:30  INFO 75784 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T10:03:10.106+05:30  WARN 75784 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T10:03:10.405+05:30  WARN 75784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T10:03:11.191+05:30  INFO 75784 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@629e9845, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@503900d7, org.springframework.security.web.context.SecurityContextHolderFilter@32d5f0be, org.springframework.security.web.header.HeaderWriterFilter@385dc245, org.springframework.web.filter.CorsFilter@2c4069ae, org.springframework.security.web.authentication.logout.LogoutFilter@f2414bc, com.project.reconciliation.security.jwt.AuthTokenFilter@31e5dc10, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ae93fd4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f5cb417, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@385fb22e, org.springframework.security.web.session.SessionManagementFilter@135fb4f4, org.springframework.security.web.access.ExceptionTranslationFilter@4f05ad88, org.springframework.security.web.access.intercept.AuthorizationFilter@4e1f8140]
+2024-07-12T10:03:12.110+05:30  INFO 75784 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 11.623 seconds (process running for 19.671)
+2024-07-12T10:03:12.362+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:03:12.363+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T10:03:12.370+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:03:12.378+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:03:12.384+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:03:12.385+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T10:03:12.386+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:03:12.391+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:03:12.392+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:03:12.397+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:03:12.397+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:03:12.401+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:03:12.402+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T10:03:12.402+05:30  INFO 75784 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T10:03:12.472+05:30  INFO 75784 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T10:03:12.479+05:30  INFO 75784 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T10:03:12.494+05:30  INFO 75784 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T10:03:12.499+05:30  INFO 75784 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T10:03:12.579+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T10:03:12.584+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:03:12.585+05:30  WARN 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T10:03:12.593+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T10:03:12.602+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T10:03:12.607+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T10:03:12.612+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T10:03:12.618+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:03:12.619+05:30  INFO 75784 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T10:03:12.687+05:30  INFO 75784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:03:12.692+05:30  INFO 75784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T10:03:12.709+05:30  INFO 75784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T10:19:27.209+05:30  INFO 73808 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 73808 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T10:19:27.217+05:30  INFO 73808 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T10:19:29.385+05:30  INFO 73808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T10:19:29.597+05:30  INFO 73808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 7 JPA repository interfaces.
+2024-07-12T10:19:30.694+05:30  INFO 73808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T10:19:30.850+05:30  INFO 73808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T10:19:30.953+05:30  INFO 73808 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T10:19:31.398+05:30  INFO 73808 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T10:19:31.475+05:30  INFO 73808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T10:19:32.167+05:30  INFO 73808 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ec2caf2
+2024-07-12T10:19:32.173+05:30  INFO 73808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T10:19:32.343+05:30  WARN 73808 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T10:19:34.488+05:30  INFO 73808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T10:19:34.748+05:30  INFO 73808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:19:35.665+05:30  INFO 73808 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T10:19:35.667+05:30  WARN 73808 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T10:19:35.991+05:30  WARN 73808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T10:19:36.633+05:30  INFO 73808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b0b55ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5325c496, org.springframework.security.web.context.SecurityContextHolderFilter@4604790f, org.springframework.security.web.header.HeaderWriterFilter@2391ee25, org.springframework.web.filter.CorsFilter@3d90d1e5, org.springframework.security.web.authentication.logout.LogoutFilter@2e9549d0, com.project.reconciliation.security.jwt.AuthTokenFilter@2abcd22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@787a0dcf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69254534, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ae931b6, org.springframework.security.web.session.SessionManagementFilter@38470150, org.springframework.security.web.access.ExceptionTranslationFilter@2412c7ca, org.springframework.security.web.access.intercept.AuthorizationFilter@2c4088c2]
+2024-07-12T10:19:37.254+05:30  INFO 73808 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 11.134 seconds (process running for 19.752)
+2024-07-12T10:19:37.501+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:19:37.502+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T10:19:37.506+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:19:37.518+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:19:37.526+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:19:37.526+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T10:19:37.526+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:19:37.537+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:19:37.537+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:19:37.546+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:19:37.546+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:19:37.550+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:19:37.551+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T10:19:37.552+05:30  INFO 73808 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T10:19:37.560+05:30  INFO 73808 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:19:37.566+05:30  INFO 73808 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:19:37.652+05:30  INFO 73808 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T10:19:37.657+05:30  INFO 73808 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T10:19:37.668+05:30  INFO 73808 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T10:19:37.673+05:30  INFO 73808 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T10:19:37.748+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T10:19:37.751+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:19:37.752+05:30  WARN 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T10:19:37.757+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T10:19:37.764+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T10:19:37.768+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T10:19:37.775+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T10:19:37.781+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:19:37.782+05:30  INFO 73808 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T10:19:37.846+05:30  INFO 73808 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:19:37.854+05:30  INFO 73808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T10:19:37.878+05:30  INFO 73808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T10:39:10.336+05:30  INFO 19352 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 19352 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T10:39:10.342+05:30  INFO 19352 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T10:39:15.117+05:30  INFO 19352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T10:39:15.383+05:30  INFO 19352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226 ms. Found 7 JPA repository interfaces.
+2024-07-12T10:39:16.546+05:30  INFO 19352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T10:39:16.734+05:30  INFO 19352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T10:39:16.835+05:30  INFO 19352 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T10:39:17.288+05:30  INFO 19352 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T10:39:17.351+05:30  INFO 19352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T10:39:17.861+05:30  INFO 19352 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5938638f
+2024-07-12T10:39:17.874+05:30  INFO 19352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T10:39:17.993+05:30  WARN 19352 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T10:39:19.551+05:30  INFO 19352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T10:39:19.722+05:30  INFO 19352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:39:20.360+05:30  INFO 19352 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T10:39:20.361+05:30  WARN 19352 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T10:39:20.587+05:30  WARN 19352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T10:39:21.148+05:30  INFO 19352 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f498140, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c0f1c4b, org.springframework.security.web.context.SecurityContextHolderFilter@2240e6d0, org.springframework.security.web.header.HeaderWriterFilter@19263e99, org.springframework.web.filter.CorsFilter@6d5edd8e, org.springframework.security.web.authentication.logout.LogoutFilter@2c4088c2, com.project.reconciliation.security.jwt.AuthTokenFilter@3ad33a5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@331c22cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33f13380, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@538d76b2, org.springframework.security.web.session.SessionManagementFilter@306d0b5e, org.springframework.security.web.access.ExceptionTranslationFilter@38470150, org.springframework.security.web.access.intercept.AuthorizationFilter@610c4933]
+2024-07-12T10:39:21.675+05:30  INFO 19352 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 12.772 seconds (process running for 23.854)
+2024-07-12T10:39:21.889+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:39:21.890+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T10:39:21.895+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:39:21.905+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:39:21.915+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:39:21.917+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T10:39:21.918+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:39:21.927+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:39:21.927+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:39:21.933+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:39:21.933+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:39:21.942+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:39:21.943+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T10:39:21.943+05:30  INFO 19352 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T10:39:21.953+05:30  INFO 19352 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:39:21.963+05:30  INFO 19352 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:39:21.963+05:30 ERROR 19352 --- [main] c.p.r.service.DiscrepancyServiceImpl     : No discrepancies found
+2024-07-12T10:39:22.033+05:30  INFO 19352 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T10:39:22.037+05:30  INFO 19352 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T10:39:22.042+05:30  INFO 19352 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T10:39:22.045+05:30  INFO 19352 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T10:39:22.111+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:39:22.112+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:39:22.113+05:30  WARN 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : No billing records found for subscriber ID: 1
+2024-07-12T10:39:22.118+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:39:22.119+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:39:22.124+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:39:22.125+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:39:22.134+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:39:22.143+05:30  INFO 19352 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:39:22.217+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T10:39:22.227+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:39:22.228+05:30  WARN 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T10:39:22.235+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T10:39:22.258+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T10:39:22.265+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T10:39:22.270+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T10:39:22.275+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:39:22.276+05:30  INFO 19352 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T10:39:22.332+05:30  INFO 19352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:39:22.348+05:30  INFO 19352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T10:39:22.378+05:30  INFO 19352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T10:45:01.576+05:30  INFO 56276 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 56276 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T10:45:01.580+05:30  INFO 56276 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T10:45:04.259+05:30  INFO 56276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T10:45:04.549+05:30  INFO 56276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 254 ms. Found 7 JPA repository interfaces.
+2024-07-12T10:45:06.040+05:30  INFO 56276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T10:45:06.257+05:30  INFO 56276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T10:45:06.346+05:30  INFO 56276 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T10:45:06.802+05:30  INFO 56276 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T10:45:06.889+05:30  INFO 56276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T10:45:07.624+05:30  INFO 56276 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63f48de4
+2024-07-12T10:45:07.631+05:30  INFO 56276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T10:45:07.741+05:30  WARN 56276 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T10:45:09.378+05:30  INFO 56276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T10:45:09.623+05:30  INFO 56276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:45:10.369+05:30  INFO 56276 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T10:45:10.372+05:30  WARN 56276 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T10:45:10.634+05:30  WARN 56276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T10:45:11.294+05:30  INFO 56276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50cdbe02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64141d14, org.springframework.security.web.context.SecurityContextHolderFilter@638c2bd9, org.springframework.security.web.header.HeaderWriterFilter@508036af, org.springframework.web.filter.CorsFilter@7f3d0eb5, org.springframework.security.web.authentication.logout.LogoutFilter@5325c496, com.project.reconciliation.security.jwt.AuthTokenFilter@fa1da5b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3209e3de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b8b3874, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@473dcf06, org.springframework.security.web.session.SessionManagementFilter@7aaf3e3d, org.springframework.security.web.access.ExceptionTranslationFilter@46c9ad1e, org.springframework.security.web.access.intercept.AuthorizationFilter@4c0f1c4b]
+2024-07-12T10:45:12.018+05:30  INFO 56276 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 11.522 seconds (process running for 18.849)
+2024-07-12T10:45:12.239+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:45:12.240+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T10:45:12.251+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:45:12.258+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:45:12.268+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:45:12.270+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T10:45:12.270+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:45:12.278+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:45:12.279+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T10:45:12.284+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T10:45:12.284+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T10:45:12.289+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T10:45:12.289+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T10:45:12.291+05:30  INFO 56276 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T10:45:12.400+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Adding data usage entry with ID: 1
+2024-07-12T10:45:12.404+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculating data usage costs
+2024-07-12T10:45:12.405+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculated and saved cost for data usage ID: 1
+2024-07-12T10:45:12.405+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculated data usage costs for all entries
+2024-07-12T10:45:12.420+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculating data usage costs
+2024-07-12T10:45:12.421+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Data usage cost already exists for subscriber ID: 1
+2024-07-12T10:45:12.427+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Fetching data usage from file
+2024-07-12T10:45:12.441+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Adding data usage entry with ID: 1
+2024-07-12T10:45:12.522+05:30  INFO 56276 --- [main] c.p.r.service.DataUsageServiceImpl       : Fetching data usage from file
+2024-07-12T10:45:12.531+05:30  INFO 56276 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:45:12.537+05:30  INFO 56276 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T10:45:12.538+05:30 ERROR 56276 --- [main] c.p.r.service.DiscrepancyServiceImpl     : No discrepancies found
+2024-07-12T10:45:12.615+05:30  INFO 56276 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T10:45:12.619+05:30  INFO 56276 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T10:45:12.624+05:30  INFO 56276 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T10:45:12.629+05:30  INFO 56276 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T10:45:12.641+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:45:12.642+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:45:12.643+05:30  WARN 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : No billing records found for subscriber ID: 1
+2024-07-12T10:45:12.649+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:45:12.650+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:45:12.655+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T10:45:12.655+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:45:12.661+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:45:12.668+05:30  INFO 56276 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T10:45:12.741+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T10:45:12.743+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:45:12.744+05:30  WARN 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T10:45:12.748+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T10:45:12.754+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T10:45:12.757+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T10:45:12.761+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T10:45:12.765+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T10:45:12.766+05:30  INFO 56276 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T10:45:12.817+05:30  INFO 56276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T10:45:12.821+05:30  INFO 56276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T10:45:12.842+05:30  INFO 56276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-12T14:05:53.335+05:30  INFO 81112 --- [main] c.p.r.ReconciliationApplicationTest      : Starting ReconciliationApplicationTest using Java 17.0.9 with PID 81112 (started by mahibalan.j in D:\cdrreconciliation\reconciliation\cdr\cdrreconciliationtesting)
+2024-07-12T14:05:53.340+05:30  INFO 81112 --- [main] c.p.r.ReconciliationApplicationTest      : No active profile set, falling back to 1 default profile: "default"
+2024-07-12T14:05:55.640+05:30  INFO 81112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-12T14:05:55.845+05:30  INFO 81112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 7 JPA repository interfaces.
+2024-07-12T14:05:57.003+05:30  INFO 81112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-12T14:05:57.186+05:30  INFO 81112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-12T14:05:57.291+05:30  INFO 81112 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-12T14:05:57.745+05:30  INFO 81112 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-12T14:05:57.866+05:30  INFO 81112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-12T14:05:58.457+05:30  INFO 81112 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f8990af
+2024-07-12T14:05:58.461+05:30  INFO 81112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-12T14:05:58.645+05:30  WARN 81112 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-12T14:06:00.640+05:30  INFO 81112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-12T14:06:00.925+05:30  INFO 81112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T14:06:01.945+05:30  INFO 81112 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-12T14:06:01.949+05:30  WARN 81112 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-12T14:06:02.204+05:30  WARN 81112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-12T14:06:03.022+05:30  INFO 81112 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@161d606f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@649d9cc5, org.springframework.security.web.context.SecurityContextHolderFilter@55b53608, org.springframework.security.web.header.HeaderWriterFilter@f2414bc, org.springframework.web.filter.CorsFilter@51474bb1, org.springframework.security.web.authentication.logout.LogoutFilter@7f3d0eb5, com.project.reconciliation.security.jwt.AuthTokenFilter@711aa430, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@629e9845, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@788d8e9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76f099c0, org.springframework.security.web.session.SessionManagementFilter@7a52cdce, org.springframework.security.web.access.ExceptionTranslationFilter@3209e3de, org.springframework.security.web.access.intercept.AuthorizationFilter@7bd12465]
+2024-07-12T14:06:03.859+05:30  INFO 81112 --- [main] c.p.r.ReconciliationApplicationTest      : Started ReconciliationApplicationTest in 11.674 seconds (process running for 19.889)
+2024-07-12T14:06:04.141+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T14:06:04.142+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 0 billing records updated
+2024-07-12T14:06:04.148+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T14:06:04.157+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T14:06:04.166+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T14:06:04.168+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolved discrepancy for subscriber ID: 1
+2024-07-12T14:06:04.169+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T14:06:04.175+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T14:06:04.178+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 0 discrepancies found
+2024-07-12T14:06:04.189+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting to resolve discrepancies
+2024-07-12T14:06:04.190+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Resolution complete with 1 billing records updated
+2024-07-12T14:06:04.194+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Starting reconciliation of all billing records
+2024-07-12T14:06:04.196+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Discrepancy added for subscriber ID: 1
+2024-07-12T14:06:04.196+05:30  INFO 81112 --- [main] c.p.r.service.BillingRecordServiceImpl   : Reconciliation complete with 1 discrepancies found
+2024-07-12T14:06:04.302+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Adding data usage entry with ID: 1
+2024-07-12T14:06:04.307+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculating data usage costs
+2024-07-12T14:06:04.307+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculated and saved cost for data usage ID: 1
+2024-07-12T14:06:04.310+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculated data usage costs for all entries
+2024-07-12T14:06:04.326+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Calculating data usage costs
+2024-07-12T14:06:04.327+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Data usage cost already exists for subscriber ID: 1
+2024-07-12T14:06:04.332+05:30  INFO 81112 --- [main] c.p.r.service.DataUsageServiceImpl       : Adding data usage entry with ID: 1
+2024-07-12T14:06:04.340+05:30  INFO 81112 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T14:06:04.346+05:30  INFO 81112 --- [main] c.p.r.service.DiscrepancyServiceImpl     : Fetching all discrepancies
+2024-07-12T14:06:04.346+05:30 ERROR 81112 --- [main] c.p.r.service.DiscrepancyServiceImpl     : No discrepancies found
+2024-07-12T14:06:04.423+05:30  INFO 81112 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_ADMIN
+2024-07-12T14:06:04.428+05:30  INFO 81112 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 5
+2024-07-12T14:06:04.432+05:30  INFO 81112 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by ID: 1
+2024-07-12T14:06:04.436+05:30  INFO 81112 --- [main] c.p.r.service.RoleServiceImpl            : Finding role by name: ROLE_USER
+2024-07-12T14:06:04.447+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T14:06:04.447+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T14:06:04.448+05:30  WARN 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : No billing records found for subscriber ID: 1
+2024-07-12T14:06:04.457+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T14:06:04.457+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T14:06:04.467+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching billing details for subscriber ID: 1
+2024-07-12T14:06:04.467+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T14:06:04.485+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T14:06:04.497+05:30  INFO 81112 --- [main] c.p.r.service.SubscriberServiceImpl      : Fetching subscriber by ID: 1
+2024-07-12T14:06:04.578+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: existingUser
+2024-07-12T14:06:04.585+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T14:06:04.585+05:30  WARN 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : User not found for ID: 1
+2024-07-12T14:06:04.590+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: testUser
+2024-07-12T14:06:04.596+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Checking if username exists: nonExistingUser
+2024-07-12T14:06:04.602+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Finding user by username: nonExistingUser
+2024-07-12T14:06:04.607+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Adding new user entity: testUser
+2024-07-12T14:06:04.614+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Updating role for user ID: 1
+2024-07-12T14:06:04.615+05:30  INFO 81112 --- [main] c.p.r.service.UserEntityServiceImpl      : Role updated successfully for user ID: 1
+2024-07-12T14:06:04.710+05:30  INFO 81112 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-12T14:06:04.719+05:30  INFO 81112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-12T14:06:04.753+05:30  INFO 81112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
